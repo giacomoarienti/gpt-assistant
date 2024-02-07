@@ -23,7 +23,6 @@ class LLM():
                     {"role": "user", "content": message}
                 ]
             )
-            print("\nResponse:", response)
         
             if "```json" in response:
                 response = response.split("```json")[1].split("```")[0]

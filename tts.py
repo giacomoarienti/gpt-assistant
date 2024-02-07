@@ -1,5 +1,5 @@
 from gtts import gTTS
-import playsound
+import playsound, os
 
 class TTS():
     def __init__(self):
@@ -11,4 +11,7 @@ class TTS():
         
         tts = gTTS(text=message, lang="en")
         tts.save("output.mp3")
+        
         playsound.playsound("output.mp3")
+
+        os.remove("output.mp3")

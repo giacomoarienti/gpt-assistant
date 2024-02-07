@@ -35,5 +35,17 @@ Output:
 Today is Wednesday.
 ```
 
+## Example-3
+```
+> open system settings
+
+Response:
+import os
+os.system('gnome-control-center')
+Execute (y/N) > y
+
+Output:
+```
+
 ### gpt4free
 https://github.com/xtekky/gpt4free
